@@ -33,7 +33,14 @@ namespace Repository.Data
 
         public PersonaModel get(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public IEnumerable<PersonaModel> list()
