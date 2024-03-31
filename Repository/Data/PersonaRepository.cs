@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dapper;
 using System.Data;
+using Dapper;
 
 namespace Repository.Data
 {
@@ -13,6 +13,7 @@ namespace Repository.Data
         private IDbConnection conexionDB;
         public PersonaRepository(string _connectionString)
         {
+           
             conexionDB = new DbConection(_connectionString).dbConnection();
         }
         public bool add(PersonaModel persona)
@@ -45,17 +46,34 @@ namespace Repository.Data
 
         public IEnumerable<PersonaModel> list()
         {
-            throw new NotImplementedException();
+                return conexionDB.Query<PersonaModel>("SELECT * FROM Persona").ToList();
         }
+
 
         public bool remove(PersonaModel persona)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var affectedRows = conexionDB.Execute("DELETE FROM Persona WHERE id = @Id");
+                return affectedRows > 0;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public bool update(PersonaModel persona)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var affectedRows = conexionDB.Execute("UPDATE Persona SET nombre = @Nombre, apellido = @Apellido, cedula = @Cedula WHERE id = @Id", persona);
+                return affectedRows > 0;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

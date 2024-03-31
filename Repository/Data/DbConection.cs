@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,8 @@ namespace Repository.Data
 {
     public class DbConection
     {
-        private string connectionString;
+        string connectionString = "Host=myserver;Port=5432;Database=optativa;Username=postgres;Password=12345;";
+
 
         public DbConection(string _connectionString)
         {

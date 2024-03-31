@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "PYANgczbtC7ze7BlTNnIsIMh4QfHbjdUaUpAbwvzo80X2ySZlw7Sf502yMvn5u7X7dYpKWTFNRqxnftssW5OTw==",
+  "dgSpecHash": "jDemYTz6P3osTLDLu2y/i3TCFnDbkudGqNAy6wZj3en2Bpu4ockwJzkd5WKW9xgmLpNehfM5vlSG6JVfV2GXEg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ramon\\Desktop\\optativa v\\api.persona-optativo-v\\Repository\\Repository.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ramon\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\Ramon\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Ramon\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Ramon\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\Ramon\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\Ramon\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ramon\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Ramon\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

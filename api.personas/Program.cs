@@ -1,3 +1,9 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using System.Data;
+using System.Data.Common;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,9 +23,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-
-
 
 
 app.UseAuthorization();
